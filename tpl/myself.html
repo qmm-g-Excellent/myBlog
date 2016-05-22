@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>梦遥的个人博客</title>
+	<link rel="icon" type="image/x-icon" href="../static/images/icon.png">
+	<link rel="stylesheet" type="text/css" href="../static/lib/bootstrap-3.3.5-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/style.css">
+	<script type="text/javascript" src="../static/lib/jQuery/jquery-1.12.3.min.js"></script>
+	<script type="text/javascript" src="../static/lib/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../static/js/script.js"></script>
+</head>
+<body>
+<div class="sidebar" id="sidebar">
+	<nav class="nav-bar">
+		<a href="#" title="梦遥的个人博客"><span class="glyphicon glyphicon-user"></span> </a>
+		<a href="#" title="文章列表"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span></a>
+		<a href="#" title="写文章"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+		<a href="#" title="留言"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></a>
+		<a href="#footer" title="链接"><span class="glyphicon glyphicon-link" aria-hidden="true"></span></a>
+	</nav>
+</div>
+<div id="login-after">
+	<img src="../static/images/icon.jpg">
+	<span id="down-list-btn" class="glyphicon glyphicon-triangle-bottom"></span>
+	<div id="down">	
+		<p><span class="glyphicon glyphicon-menu-up"></span></p>
+		<div id="down-list">
+			<ul>
+				<li><a href="#"><span class="glyphicon glyphicon-pencil mycolor"></span>&nbsp;&nbsp;写文章</a></li>
+				<li><a href="myself.html"><span class="glyphicon glyphicon-user mycolor"></span>&nbsp;&nbsp;我的主页</a></li>
+				<li><a href="settings.html"><span class="glyphicon glyphicon-cog mycolor"></span>&nbsp;&nbsp;设置</a></li>
+				<li><a href="#"><span class="glyphicon glyphicon-question-sign mycolor"></span>&nbsp;&nbsp;帮助</a></li>
+				<li id="log-out"><a href="#"><span class="glyphicon glyphicon-log-out mycolor"></span>&nbsp;&nbsp;登出</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="left-side">
+	<div class="side-content">
+		<div class="image-middle">
+			<img src="../static/images/icon.jpg" alt="头像">
+		</div>
+		<p><span class="fontwight">xiaopangzhu</span></p>
+		<p><a class="fontcolor" href="settings.html">编辑个人资料</a></p>
+		<p><a class="right-line" href="#">文章&nbsp;&nbsp;<span>2</span></a><a class="right-line" href="#">收获喜欢&nbsp;&nbsp;<span>10</span></a><a class="rightest" href="#">留言&nbsp;&nbsp;<span>4</span></a></p>
+	</div>
+</div>
+<div class="middle-content">
+	<div class="my-tab">
+		<span id="content-insert1" class="bottom1"><a href="#">最新文章</a></span>
+		<span id="content-insert2" class="bottom2"><a href="#">最新动态</a></span>
+		<span id="content-insert3" class="bottom3"><a href="#">热门文章</a></span>
+	</div>
+	<div class="content-insert1">
+		<div class="content-1">
+			<span>7天之前</span>
+			<h4>Web前端开发</h4>
+			<p><a href="#">阅读<span>2</span></a><a href="#">评论<span>3</span></a><a href="#">喜欢<span>4</span></a></p>
+		</div>
+	</div>
+	<div class="content-insert2">
+		最新动态
+	</div>
+	<div class="content-insert3">
+		热门文章
+	</div>
+</div>
+<script type="text/javascript">
+	var height1 = document.documentElement.clientHeight + 'px';
+	$('.left-side').css('height',height1);
+	$('.bottom1').click(function(){
+		$('.content-insert1').css('display','block');
+		$('.content-insert2').css('display','none');
+		$('.content-insert3').css('display','none');
+		$('.bottom1').css('border-bottom','2px'+' solid'+' #3a3b3b');
+		$('.bottom2').css('border-bottom','');
+		$('.bottom3').css('border-bottom','');
+	})
+	$('.bottom2').click(function(){
+		$('.content-insert1').css('display','none');
+		$('.content-insert2').css('display','block');
+		$('.content-insert3').css('display','none');
+		$('.bottom1').css('border-bottom','0px');
+		$('.bottom2').css('border-bottom','2px'+' solid'+' #3a3b3b');
+		$('.bottom3').css('border-bottom','');
+	})
+	$('.bottom3').click(function(){
+		$('.content-insert1').css('display','none');
+		$('.content-insert2').css('display','none');
+		$('.content-insert3').css('display','block');
+		$('.bottom1').css('border-bottom','0px');
+		$('.bottom2').css('border-bottom','');
+		$('.bottom3').css('border-bottom','2px'+' solid'+' #3a3b3b');
+	})
+</script>
+</body>
+</html>

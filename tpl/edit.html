@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>梦遥的个人博客</title>
+	<link rel="icon" type="image/x-icon" href="static/images/icon.png">
+	<link rel="stylesheet" type="text/css" href="static/lib/bootstrap-3.3.5-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="static/css/style.css">
+	<link rel="stylesheet" href="static/lib/jQuery-edit/assets/design/css/trumbowyg.css">
+	<script type="text/javascript" src="static/lib/jQuery/jquery-1.12.3.min.js"></script>
+	<script src="static/lib/jQuery-edit/assets/trumbowyg.js"></script>
+	<script src="static/lib/jQuery-edit/assets/plugins/base64/trumbowyg.base64.js"></script>
+	<script type="text/javascript" src="static/js/script.js"></script>
+</head>
+<body>
+	<div class="sidebar" id="sidebar">
+		<nav class="nav-bar">
+			<a href="#" title="梦遥的个人博客"><span class="glyphicon glyphicon-user"></span> </a>
+			<a href="#" title="文章列表"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span></a>
+			<a href="#" title="写文章"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+			<a href="#" title="留言"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></a>
+			<a href="#footer" title="链接"><span class="glyphicon glyphicon-link" aria-hidden="true"></span></a>
+		</nav>
+	</div>
+	<div class="wrap3">
+		<div class="type-title">
+			<form class="form-inline">
+				<span>文章类型</span><input type="text" id="" class="form-control mywidth" placeholder="输入文章类型"><br>
+				<span>文章标题</span><input type="text" id="" class="form-control mywidth" placeholder="输入文章标题">
+			</form>
+		</div>
+		<div class="edit-style">
+			<div id="odiv" style="display:none;position:absolute;z-index:100;">
+			    <img src="static/lib/jQuery-edit/assets/pic/sx.png" title="缩小" border="0" alt="缩小" onclick="sub(-1);"/>
+			    <img src="static/lib/jQuery-edit/assets/pic/fd.png" title="放大" border="0" alt="放大" onclick="sub(1)"/>
+			    <img src="static/lib/jQuery-edit/assets/pic/cz.png" title="重置" border="0" alt="重置" onclick="sub(0)"/>
+			    <img src="static/lib/jQuery-edit/assets/pic/sc.png" title="删除" border="0" alt="删除" onclick="del();odiv.style.display='none';"/>
+			</div>
+			<div  onmousedown="show_element(event)" style="clear:both;height: 400px;" id="customized-buttonpane" class="editor">
+			</div>
+		</div>
+	</div>
+</body>
+</html>
